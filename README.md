@@ -1,0 +1,1 @@
+# Argo-cd Scifi Style
