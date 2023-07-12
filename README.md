@@ -16,7 +16,9 @@ data:
 
 **Helm values.yaml**
 ```yaml
-config:
+server:
   ...
-  styles: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/argocd-scifi-style.css"
+  config:
+    ...
+    ui.cssurl: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/argocd-scifi-style.css"
 ```
