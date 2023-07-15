@@ -1,28 +1,62 @@
+:root {
+  --sidebar-background: #005dd9;
+  --page-and-panel-background: linear-gradient(
+    to top left,
+    rgb(0 0 0) 0%,
+    rgb(2 13 72 / 50%) 50%,
+    rgb(0 0 0) 100%
+  );
+  --button-primary: #00a9cf;
+  --button-secondary: #00ffff;
+  --button-disabled: #697c7c;
+  --primary: #ffffff;
+}
+
+body {
+  
+}
+
 .nav-bar__logo img,
 .sidebar__logo img {
   content: url(https://avatars.githubusercontent.com/u/126340860?s=200&v=4);
 }
 
-:root {
-  --sidebar-background: #0f3465;
-  --page-and-panel-background: #1c51d8;
-  --button-primary: #0bdfde;
-  --button-secondary: #75bdbd;
-  --button-disabled: #6b7c7c;
-  --primary: #1f639b;
-}
-
-.sidebar,
-.nav-bar {
-  background: var(--sidebar-background);
-}
-
-.page__content-wrapper {
-  background: var(--page-and-panel-background) !important;
+.login {
+  background-image: url(https://img.freepik.com/free-photo/space-galaxy-background_53876-93121.jpg?w=1800&t=st=1689423506~exp=1689424106~hmac=ec504fb1a8c0c711f22549b94185284d1055bbcaf075ec3d3ade231ff4996d59);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sliding-panel__header,
-.sliding-panel__body {
+.sliding-panel__wrapper,
+.sliding-panel__body,
+.sidebar,
+.nav-bar,
+.login__box {
+  background: linear-gradient(
+    to top left,
+    rgb(85 0 190 / 30%) 0%,
+    rgb(3 9 96 / 30%) 33%,
+    rgb(93 43 135 / 30%) 66%,
+    rgb(24 72 33 / 30%) 100%
+  );
+  background-size: 400% 400%;
+  border-left: #4fa0d0;
+  border-right: #4fa0d0;
+  border-style: solid;
+  border-width: 1px;
+
+  animation: gradient 15s ease infinite;
+}
+
+
+.argo-field {
+  color: white;
+}
+
+
+
+.page__content-wrapper {
   background: var(--page-and-panel-background) !important;
 }
 
@@ -68,51 +102,77 @@ a,
   background: var(--primary) !important;
 }
 
-
 .pod-view__settings__section {
   color: #fff !important;
 }
 
 .theme-dark .white-box {
-    color: #ffffff;
+  color: #ffffff;
 
-    background: linear-gradient(-45deg, #4472e7, #1c51d8, #4472e7);
-    animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #4472e7, #1c51d8, #4472e7);
+  animation: gradient 15s ease infinite;
 }
 
 /* Node Collection box*/
 .white-box {
-    border-color: #a9dcff;
-    border-width: 1px;
-    border-style: solid;
+  border-color: #a9dcff;
+  border-width: 1px;
+  border-style: solid;
 }
 
 /* Pods */
-.pod-view__node__pod--succeeded, .pod-view__node__pod--healthy {
-    background: linear-gradient(-45deg, #985eab, #82319d, #985eab);
-    animation: gradient 15s ease infinite;
+.pod-view__node__pod--succeeded,
+.pod-view__node__pod--healthy {
+  background: linear-gradient(-45deg, #985eab, #82319d, #985eab);
+  animation: gradient 15s ease infinite;
 }
 
 .pod-view__node__pod__new-pod-icon {
-    color: violet;
+  color: violet;
 }
 
 /* Stats */
-.pod-view__node__pod__stat__bar--fill {    
-    background-color: #82319d;
+.pod-view__node__pod__stat__bar--fill {
+  background-color: #82319d;
 }
 .pod-view__node__pod__stat__bar--neighbors {
-    background-color: #92769b;
+  background-color: #92769b;
+}
+
+.icon {
+  color: #43a1e9;
+}
+
+.fa-check {
+  color: var(--button-secondary);
+  background-color: #00000000;
+}
+
+.checkbox {
+  border-color: var(--button-primary);
+  border-width: 1px;
+}
+
+.filter__header,
+.fa-caret-up,
+.fa-caret-down,
+.filter {
+  color: var(--primary);
+}
+
+.autocomplete__items {
+  background-color: black;
+  color: white;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
