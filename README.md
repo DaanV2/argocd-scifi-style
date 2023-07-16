@@ -11,7 +11,7 @@ metadata:
   ...
   name: argocd-cm
 data:
-  ui.cssurl: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/argocd-scifi-style/styles.css"
+  ui.cssurl: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/styles.css"
 ```
 
 **Helm values.yaml**
@@ -20,5 +20,5 @@ server:
   ...
   config:
     ...
-    ui.cssurl: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/argocd-scifi-style/styles.css"
+    ui.cssurl: "https://raw.githubusercontent.com/DaanV2/argocd-scifi-style/main/styles.css"
 ```
