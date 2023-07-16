@@ -8,12 +8,12 @@
   );
   --button-primary: #00a9cf;
   --button-secondary: #00ffff;
-  --button-disabled: #697c7c;
+  --button-disabled: #00ffff78;
   --primary: #ffffff;
 }
 
 body {
-  
+  background: black;
 }
 
 .nav-bar__logo img,
@@ -25,6 +25,13 @@ body {
   background-image: url(https://img.freepik.com/free-photo/space-galaxy-background_53876-93121.jpg?w=1800&t=st=1689423506~exp=1689424106~hmac=ec504fb1a8c0c711f22549b94185284d1055bbcaf075ec3d3ade231ff4996d59);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.application-details .graph-options-panel,
+.application-status-panel,
+.top-bar {
+  background: #194bc94f;
+  background-color: #194bc94f;
 }
 
 .sliding-panel__header,
@@ -41,20 +48,42 @@ body {
     rgb(24 72 33 / 30%) 100%
   );
   background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.applications-list__search,
+.top-bar__right-side,
+.top-bar__left-side {
+  background: transparent;
+  background-color:transparent;
+}
+
+.sliding-panel__header,
+.sliding-panel__wrapper,
+.sliding-panel__body,
+.sidebar,
+.nav-bar,
+.login__box {
   border-left: #4fa0d0;
   border-right: #4fa0d0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.theme-dark .argo-table-list__row {
+  background: #0079ff5c;
+  border: #00a0ff;
   border-style: solid;
   border-width: 1px;
 
   animation: gradient 15s ease infinite;
 }
 
-
+.sidebar__nav-item,
+.sidebar__version,
 .argo-field {
   color: white;
 }
-
-
 
 .page__content-wrapper {
   background: var(--page-and-panel-background) !important;
@@ -93,8 +122,7 @@ body {
 a,
 /* title of the each item in list in settings page */
 .settings-overview__redirect-panel__title,
-.selected,
-.top-bar__title {
+.selected {
   color: var(--primary) !important;
 }
 
@@ -111,6 +139,8 @@ a,
 
   background: linear-gradient(-45deg, #4472e7, #1c51d8, #4472e7);
   animation: gradient 15s ease infinite;
+  
+  background-size: 400% 400%;
 }
 
 /* Node Collection box*/
@@ -121,10 +151,21 @@ a,
 }
 
 /* Pods */
+.application-resource-tree__node--lower-section__pod-group__pod,
 .pod-view__node__pod--succeeded,
 .pod-view__node__pod--healthy {
   background: linear-gradient(-45deg, #985eab, #82319d, #985eab);
   animation: gradient 15s ease infinite;
+  
+  background-size: 400% 400%;
+}
+
+.application-resource-tree__node--lower-section__pod-group__pod-container__pods,
+.pod-view__node__pod-container__pods,
+.pod-view__node__info--large {
+  background: #ffffff1a;
+  color:white;
+  border-radius: 5px;
 }
 
 .pod-view__node__pod__new-pod-icon {
@@ -142,10 +183,23 @@ a,
 .icon {
   color: #43a1e9;
 }
-
+.fa-cloud {
+  color: #8a23b1;
+}
 .fa-check {
   color: var(--button-secondary);
   background-color: #00000000;
+}
+.fa-star {
+  background: transparent;
+}
+
+.theme-dark .application-resource-tree__node {
+  background: #006dffc9;
+}
+
+.application-resource-tree__line {
+  color: #8a23b1;
 }
 
 .checkbox {
