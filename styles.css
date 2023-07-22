@@ -17,6 +17,7 @@ body {
   background: black;
 }
 
+/* Replace argocd logo with custom logo */
 .nav-bar__logo img,
 .sidebar__logo img {
   content: url(https://avatars.githubusercontent.com/u/126340860?s=200&v=4);
