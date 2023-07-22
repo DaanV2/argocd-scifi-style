@@ -10,6 +10,7 @@
   --button-secondary: #00ffff;
   --button-disabled: #00ffff78;
   --primary: #ffffff;
+  --primary-negative: #000000;
 }
 
 body {
@@ -29,9 +30,10 @@ body {
 
 .application-details .graph-options-panel,
 .application-status-panel,
-.top-bar {
+.theme-dark .application-status-panel,
+.top-bar,
+.theme-dark .top-bar {
   background: #194bc94f;
-  background-color: #194bc94f;
 }
 
 .sliding-panel__header,
@@ -58,16 +60,21 @@ body {
   background-color:transparent;
 }
 
+.top-bar {
+  border-bottom: 2px solid #009dff5e
+}
+
+.application-status-panel__item:not(:first-child) {
+  border-left: 2px solid #009dff5e;
+}
+
 .sliding-panel__header,
 .sliding-panel__wrapper,
 .sliding-panel__body,
 .sidebar,
 .nav-bar,
 .login__box {
-  border-left: #4fa0d0;
-  border-right: #4fa0d0;
-  border-style: solid;
-  border-width: 1px;
+
 }
 
 .theme-dark .argo-table-list__row {
@@ -123,7 +130,7 @@ a,
 /* title of the each item in list in settings page */
 .settings-overview__redirect-panel__title,
 .selected {
-  color: var(--primary) !important;
+  color: #ffffff !important;
 }
 
 .tabs__indicator {
@@ -212,6 +219,25 @@ a,
 .fa-caret-down,
 .filter {
   color: var(--primary);
+}
+
+.application-resource-tree__node-kind {
+  color: var(--primary);
+}
+
+.application-resource-tree__node-kind-icon img {
+  color: var(--primary);
+  stroke: #c52727;
+  fill: #c52727;
+}
+
+/* Labels */
+.application-resource-tree__node {
+   color: var(----primary-negative);
+}
+
+.application-resource-tree__node-label {
+    padding: 2px 7px;
 }
 
 .autocomplete__items {
